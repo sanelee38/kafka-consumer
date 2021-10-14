@@ -1,0 +1,153 @@
+2021-10-08 16:07:44.553  INFO 9360 --- [main] c.h.s.consumer.ConsumerApplication       : Starting ConsumerApplication using Java 1.8.0_231 on lizhi186545 with PID 9360 (G:\apache-maven-3.6.1\apache-maven-3.6.1\repo\org\springframework\boot\spring-boot-starter-parent\2.5.5\target\classes started by lizhi186545 in G:\workspace\code\myproject)
+2021-10-08 16:07:44.561  INFO 9360 --- [main] c.h.s.consumer.ConsumerApplication       : No active profile set, falling back to default profiles: default
+2021-10-08 16:07:45.814  INFO 9360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-10-08 16:07:45.823  INFO 9360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-08 16:07:45.824  INFO 9360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-08 16:07:45.899  INFO 9360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-08 16:07:45.899  INFO 9360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1286 ms
+2021-10-08 16:07:46.501  WARN 9360 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-08 16:07:46.849  INFO 9360 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.137.127:9092, 192.168.137.128:9092, 192.168.137.129:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-defaultConsumerGroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = defaultConsumerGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 180000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 120000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-10-08 16:07:46.921  INFO 9360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.7.1
+2021-10-08 16:07:46.922  INFO 9360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 61dbce85d0d41457
+2021-10-08 16:07:46.922  INFO 9360 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1633680466920
+2021-10-08 16:07:46.925  INFO 9360 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Subscribed to topic(s): kafka-topic
+2021-10-08 16:07:46.953  INFO 9360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-10-08 16:07:46.963  INFO 9360 --- [main] c.h.s.consumer.ConsumerApplication       : Started ConsumerApplication in 3.018 seconds (JVM running for 4.002)
+2021-10-08 16:07:47.293  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Cluster ID: u68fqykmSL2GBIMRMUQVcg
+2021-10-08 16:07:47.295  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Discovered group coordinator 192.168.137.127:9092 (id: 2147483646 rack: null)
+2021-10-08 16:07:47.298  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] (Re-)joining group
+2021-10-08 16:07:47.343  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] (Re-)joining group
+2021-10-08 16:07:47.369  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Successfully joined group with generation Generation{generationId=1, memberId='consumer-defaultConsumerGroup-1-6f1c3a21-4a15-43ee-977b-369be3aa429f', protocol='range'}
+2021-10-08 16:07:47.372  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Finished assignment for group at generation 1: {consumer-defaultConsumerGroup-1-6f1c3a21-4a15-43ee-977b-369be3aa429f=Assignment(partitions=[kafka-topic-0, kafka-topic-1, kafka-topic-2, kafka-topic-3, kafka-topic-4, kafka-topic-5, kafka-topic-6, kafka-topic-7, kafka-topic-8, kafka-topic-9])}
+2021-10-08 16:07:47.388  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Successfully synced group in generation Generation{generationId=1, memberId='consumer-defaultConsumerGroup-1-6f1c3a21-4a15-43ee-977b-369be3aa429f', protocol='range'}
+2021-10-08 16:07:47.389  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Notifying assignor about the new Assignment(partitions=[kafka-topic-0, kafka-topic-1, kafka-topic-2, kafka-topic-3, kafka-topic-4, kafka-topic-5, kafka-topic-6, kafka-topic-7, kafka-topic-8, kafka-topic-9])
+2021-10-08 16:07:47.391  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Adding newly assigned partitions: kafka-topic-0, kafka-topic-1, kafka-topic-8, kafka-topic-9, kafka-topic-6, kafka-topic-7, kafka-topic-4, kafka-topic-5, kafka-topic-2, kafka-topic-3
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-0
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-1
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-8
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-9
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-6
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-7
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-4
+2021-10-08 16:07:47.416  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-5
+2021-10-08 16:07:47.417  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-2
+2021-10-08 16:07:47.417  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Found no committed offset for partition kafka-topic-3
+2021-10-08 16:07:47.437  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-0 to position FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.127:9092 (id: 1 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.438  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-9 to position FetchPosition{offset=9, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.127:9092 (id: 1 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.438  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-6 to position FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.127:9092 (id: 1 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.438  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-3 to position FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.127:9092 (id: 1 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.439  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-1 to position FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.128:9092 (id: 2 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.439  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-7 to position FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.128:9092 (id: 2 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.440  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-4 to position FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.128:9092 (id: 2 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.447  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-8 to position FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.129:9092 (id: 3 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.447  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-5 to position FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.129:9092 (id: 3 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.447  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Resetting offset for partition kafka-topic-2 to position FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.137.129:9092 (id: 3 rack: null)], epoch=absent}}.
+2021-10-08 16:07:47.448  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : defaultConsumerGroup: partitions assigned: [kafka-topic-0, kafka-topic-1, kafka-topic-8, kafka-topic-9, kafka-topic-6, kafka-topic-7, kafka-topic-4, kafka-topic-5, kafka-topic-2, kafka-topic-3]
+2021-10-08 16:11:09.680  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-08 16:11:10.335  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-08 16:11:10.562  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-9-{"data":{"id":12,"item":"basketball","name":"james"},"message":"add","status":0}
+2021-10-08 16:12:34.270  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-3-{"data":{"id":1,"item":"basketball","name":"james"},"message":"add","status":0}
+2021-10-08 16:13:22.032  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-6-{"data":{"id":1,"item":"basketball","name":"james"},"message":"add","status":0}
+2021-10-08 16:13:44.381  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-0-{"data":{"id":2,"item":"pingpang","name":"马龙"},"message":"add","status":0}
+2021-10-08 16:13:56.662  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-1-{"data":{"id":3,"item":"110m","name":"刘翔"},"message":"add","status":0}
+2021-10-08 16:14:09.483  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-9-{"data":{"id":4,"item":"basketball","name":"jardon"},"message":"add","status":0}
+2021-10-08 16:14:24.780  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-5-{"data":{"id":5,"item":"10m shooting","name":"杨倩"},"message":"add","status":0}
+2021-10-08 16:14:47.324  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-4-{"data":{"id":6,"item":"weightlifting","name":"石智勇"},"message":"add","status":0}
+2021-10-08 16:15:00.310  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-7-{"data":{"id":7,"item":"3m jumping","name":"全红婵"},"message":"add","status":0}
+2021-10-08 16:15:11.298  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-3-{"data":{"id":8,"item":"basketball","name":"green"},"message":"add","status":0}
+2021-10-08 16:15:28.667  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-4-{"data":{"id":9,"item":"football","name":"武磊"},"message":"add","status":0}
+2021-10-08 16:15:40.751  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-5-{"data":{"id":10,"item":"basketball","name":"sengun"},"message":"add","status":0}
+2021-10-08 16:16:26.968  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-8-{"data":{"item":"10m jumping","name":"全红婵","updateTime":1633680986489},"message":"update","status":0}
+2021-10-08 16:16:51.954  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-0-{"data":{"name":"sengun"},"message":"delete","status":0}
+2021-10-08 16:18:55.060  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-8-{"data":{"id":10,"item":"basketball","name":"sengun"},"message":"add","status":0}
+2021-10-08 16:20:49.980  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-3-{"data":{"item":"3m jumping","name":"全红婵","updateTime":1633681247939},"message":"update","status":0}
+2021-10-08 16:21:02.729  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.h.s.c.controller.ConsumerController    : 简单消费，record：kafka-topic-8-{"data":{"item":"10m jumping","name":"全红婵","updateTime":1633681262365},"message":"update","status":0}
+2021-10-08 16:54:15.200  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Revoke previously assigned partitions kafka-topic-0, kafka-topic-1, kafka-topic-8, kafka-topic-9, kafka-topic-6, kafka-topic-7, kafka-topic-4, kafka-topic-5, kafka-topic-2, kafka-topic-3
+2021-10-08 16:54:15.203  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : defaultConsumerGroup: partitions revoked: [kafka-topic-0, kafka-topic-1, kafka-topic-8, kafka-topic-9, kafka-topic-6, kafka-topic-7, kafka-topic-4, kafka-topic-5, kafka-topic-2, kafka-topic-3]
+2021-10-08 16:54:15.203  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Member consumer-defaultConsumerGroup-1-6f1c3a21-4a15-43ee-977b-369be3aa429f sending LeaveGroup request to coordinator 192.168.137.127:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2021-10-08 16:54:15.206  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-defaultConsumerGroup-1, groupId=defaultConsumerGroup] Unsubscribed all topics or patterns and assigned partitions
+2021-10-08 16:54:15.261  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2021-10-08 16:54:15.261  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2021-10-08 16:54:15.261  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2021-10-08 16:54:15.268  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-defaultConsumerGroup-1 unregistered
+2021-10-08 16:54:15.269  INFO 9360 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : defaultConsumerGroup: Consumer stopped
+2021-10-08 16:54:15.289  INFO 9360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-08 16:54:15.311  INFO 9360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

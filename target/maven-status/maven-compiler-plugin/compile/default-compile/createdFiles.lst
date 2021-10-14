@@ -1,0 +1,9 @@
+com\hollysys\smartfactory\consumer\ConsumerApplication.class
+com\hollysys\smartfactory\consumer\dao\ConsumerDao.class
+com\hollysys\smartfactory\consumer\controller\ConsumerController.class
+com\hollysys\smartfactory\consumer\service\impl\ConsumerServiceImpl.class
+com\hollysys\smartfactory\consumer\entity\Consumer.class
+com\hollysys\smartfactory\consumer\entity\resp\ReturnInfo.class
+com\hollysys\smartfactory\consumer\entity\resp\ResultStatus.class
+com\hollysys\smartfactory\consumer\service\ConsumerService.class
+com\hollysys\smartfactory\consumer\entity\Producer.class

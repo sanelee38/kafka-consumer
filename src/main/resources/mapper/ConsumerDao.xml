@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hollysys.smartfactory.consumer.dao.ConsumerDao">
+
+    <resultMap type="com.hollysys.smartfactory.consumer.entity.Consumer" id="ConsumerMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="item" column="item" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ConsumerMap">
+        select
+          id, name, item
+        from consumer
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAll" resultMap="ConsumerMap">
+        select
+          id, name, item
+        from consumer group by id
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from consumer
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="item != null and item != ''">
+                and item = #{item}
+            </if>
+        </where>
+    </select>
+    <select id="queryByName" resultMap="ConsumerMap">
+        select
+            id, name, item
+        from consumer
+        where name = #{name}
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into consumer(name, item)
+        values (#{name}, #{item})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into consumer(name, item)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.name}, #{entity.item})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into consumer(name, item)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.name}, #{entity.item})
+        </foreach>
+        on duplicate key update
+        name = values(name),
+        item = values(item)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update consumer
+        <set>
+            <if test="item != null and item != ''">
+                item = #{item},
+            </if>
+        </set>
+        where name = #{name}
+    </update>
+
+    <update id="alterTable">
+        alter table consumer AUTO_INCREMENT = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from consumer where id = #{id}
+    </delete>
+
+    <delete id="deleteByName">
+        delete from consumer where NAME =#{name}
+    </delete>
+
+</mapper>
+

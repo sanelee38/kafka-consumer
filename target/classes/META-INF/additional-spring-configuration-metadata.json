@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.kafka.consumer.auto.commit.interval.ms",
+      "type": "java.lang.String",
+      "description": "Description for spring.kafka.consumer.auto.commit.interval.ms."
+  }
+] }
